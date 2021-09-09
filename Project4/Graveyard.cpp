@@ -147,7 +147,8 @@ void Graveyard::fightMonster(Fighter* f)
                 std::cout << "Your bag is full and cannot hold any more items." << std::endl;
             }
 
-            f->counter = f->counter = 1;
+            f->counter = f->counter + 1;
+            this->movePlayer(f);
         }
 
     }
