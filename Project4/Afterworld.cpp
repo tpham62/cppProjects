@@ -55,6 +55,12 @@ void Afterworld::fightMonster(Fighter* f)
         f->setAlive(false);
     }
 
+    else if (f->getSkull() == false && f->getWisp() == true && f->getCrystal() == false)
+    {
+        std::cout << "The image of yourself looks at you and fades away as you disappear into the light." << std::endl;
+        f->setAlive(false);
+    }
+
 }
 
 /************************************
